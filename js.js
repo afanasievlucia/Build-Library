@@ -35,7 +35,8 @@ class Media {
             return average; }*/   //--- longer version
 
     toggleCheckOutStatus() {
-        this._isCheckedOut === true ? this._isCheckedOut = false : this._isCheckedOut = true;
+       // this._isCheckedOut === true ? this._isCheckedOut = false : this._isCheckedOut = true;
+        this._isCheckedOut = ! this._isCheckedOut;
     }
     addRating(rating) {
         this._ratings.push(rating);
